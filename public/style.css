@@ -1,0 +1,36 @@
+head {
+	content: center;
+	width: 900px;
+	height: 20px;
+}
+
+x.png{
+	padding: 0px, 5px
+}
+
+.nav a{
+	background-color: none;
+    border: none;
+    color: white;
+    padding: 0px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    color: black;
+    align-content: center;
+};
+
+.box {
+	width: 300px;
+	height: 300px;
+	float: left;
+	display: inline-block;
+};
+
+.content {
+	max-width: 600px;
+	float: right;
+};
+
