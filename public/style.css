@@ -3,6 +3,9 @@ head {
 	width: 900px;
 	height: 20px;
 }
+body {
+	margin: 0px;
+}
 
 x.png{
 	padding: 0px, 5px
