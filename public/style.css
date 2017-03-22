@@ -3,19 +3,34 @@ head {
 	width: 900px;
 	height: 20px;
 }
-body {
-	margin: 0px;
+
+h3, h4 {
+	text-align: center;
 }
 
-x.png{
-	padding: 0px, 5px
+h4 {
+	align-content: right;
+    padding: 20px 32px 10px 32px;
+	float: right;
 }
 
-.nav a{
-	background-color: none;
-    border: none;
+.nav {
+	width: 100%;
+	height: 50px;
+}
+
+.logo {
+	padding: 0px, 5px;
+	align-content: center;
+	position: relative;
+    left: 30px;
+}
+
+.nav a, .logo {
+/*	max-width: 400px;
+*/	border: none;
     color: white;
-    padding: 0px 32px;
+    padding: 20px 32px 10px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -23,17 +38,49 @@ x.png{
     cursor: pointer;
     color: black;
     align-content: center;
-};
+    position: static;
+    float: left;
+}
+/*-------------------------------------------------*/
+body {
+	margin: 0px;
+}
+
+/*.bottom2 {
+	width: 100%;
+}*/
+
+
+
+#date {
+	width: 100%;
+	height: 75px;
+	text-align: left;
+	font-size: 45px;
+	background-color: #84714F;
+	position: relative;
+	padding: 0px 30px;
+/*    left: 30px;
+*/    color: white;
+}
+
+#date h4 {
+	padding: 0px, 0px, 0px, 20px;
+}
 
 .box {
-	width: 300px;
-	height: 300px;
+	width: 100px;
+	height: 250px;
 	float: left;
 	display: inline-block;
-};
+	padding: 0px 40px;
+	text-align: center;
+	border-color: black;
+	border-width: 20px;
+}
 
-.content {
+/*content {
 	max-width: 600px;
 	float: right;
-};
+}*/
 
