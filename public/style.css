@@ -1,4 +1,17 @@
-.content{
+fieldset{
+	min-width: 200px;
+	max-width: 200px;
+	min-height: 200px;
+	max-height: 200px;
+	align-content: center;
+}
+
+
+
+
+
+/*----------------------------------------------------
+*/.content{
     margin: auto;
  	text-align: center;
    	width: 100%;
@@ -9,10 +22,13 @@
 	justify-content: center;
 	align-content: space-around;
 	font-family: "Roboto Condensed", sans-serif;
+	min-width: 400px;
+	min-height: max-content;
 }
 
 body {
 	margin: 0px;
+	flex-wrap: wrap;
 }
 
 h3 {
@@ -23,6 +39,7 @@ h3 {
 	width: 100%;
 	height: 50px;
 	margin: none;
+    cursor: pointer;
 }
 
 .nav a, .logo {
@@ -33,18 +50,17 @@ h3 {
     text-decoration: none;
     display: inline-block;
     font-size: 12px;
-    cursor: pointer;
     color: black;
     align-content: center;
     position: static;
     float: left;
 }
 
-#search {
+h4 {
 	border: none;
     color: white;
     padding: 20px 32px 5px 20px;
-    text-align: center;
+    text-align: right;
     text-decoration: none;
     display: inline-block;
     font-size: 12px;
@@ -55,10 +71,9 @@ h3 {
     float: right;
 }
 
-/*-------------------------------------------------*/
-
-#date {
-	width: 100%;
+.bar h1{
+	min-width: 400px;
+	max-width: 600px;
 	height: 50px;
 	text-align: left;
 	align-content: left;
@@ -67,11 +82,19 @@ h3 {
 	position: static;
 	padding: 0px 0px 0px 20px;
 	color: white;
+	border: none;
+    color: none;
+    text-decoration: none;
+    align-content: left;
+    position: static;
+    float: left;
+    display: inline;
 }
 
+/*-------------------------------------------------*/
 .middle {
 	width: 100%;
-	height: 400px;
+	max-height: 100%;
 	float: left;
 	padding: 0px;
 	text-align: center;
@@ -82,7 +105,7 @@ h3 {
 	height: 100px;
 	float: left;
 	display: inline-block;
-	padding: 0px 20px;
+	padding: 0px 20px 20px 0px;
 	text-align: center;
 	border-color: black;
 	border-width: 20px;
@@ -91,6 +114,7 @@ h3 {
 .box img{
 	width: 75px;
 	height: 85px;
+	cursor: pointer;
 }
 
 /*--------------------------------*/
@@ -107,6 +131,7 @@ h3 {
 	align-content: center;
 
 	font-size:12px
+<<<<<<< HEAD
 }
 /*--------------------------------*/
 #welcomescreen {
@@ -172,3 +197,26 @@ background-image: url("https://images.unsplash.com/photo-1470163395405-d2b80e745
 
 
 /*--------------------------------*/
+
+}
+
+/*.fa fa-facebook-official{
+	position: center;
+	 width: 28px;
+  height: 28px;
+  background-size: 938px 318px;
+  background-position: -624px -48px;
+}*/
+
+.content .fa fa-facebook-official h4{
+	align-content: center;
+	position: center;
+	width: 100px;
+  	height: 50px;
+  	padding: 10px 0px;
+  	align-content: center;
+/*  	font-size: 40px*/;
+
+  /*background-size: 938px 318px;
+  background-position: -624px -48px;*/
+}

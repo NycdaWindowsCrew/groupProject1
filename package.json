@@ -1,0 +1,31 @@
+{
+  "name": "groupproject1",
+  "version": "1.0.0",
+  "description": "the first group project for nycda part-time utah class. instagram clone project.\r team members myrrh lyn & richard heflin, camille elmer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NycdaWindowsCrew/groupProject1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NycdaWindowsCrew/groupProject1/issues"
+  },
+  "homepage": "https://github.com/NycdaWindowsCrew/groupProject1#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.1",
+    "express": "^4.15.2",
+    "express-session": "^1.15.1",
+    "multer": "^1.3.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "pg": "^6.1.5",
+    "sequelize": "^3.30.2"
+  }
+}
