@@ -1,4 +1,17 @@
-.content{
+fieldset{
+	min-width: 200px;
+	max-width: 200px;
+	min-height: 200px;
+	max-height: 200px;
+	align-content: center;
+}
+
+
+
+
+
+/*----------------------------------------------------
+*/.content{
     margin: auto;
  	text-align: center;
    	width: 100%;
@@ -59,7 +72,8 @@ h4 {
 }
 
 .bar h1{
-	width: 100%;
+	min-width: 400px;
+	max-width: 600px;
 	height: 50px;
 	text-align: left;
 	align-content: left;
@@ -73,6 +87,8 @@ h4 {
     text-decoration: none;
     align-content: left;
     position: static;
+    float: left;
+    display: inline;
 }
 
 /*-------------------------------------------------*/
