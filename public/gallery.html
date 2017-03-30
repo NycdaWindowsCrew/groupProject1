@@ -1,25 +1,10 @@
 <!DOCTYPE html>
 	<html>
-		<head>
+	<head>
 			<title>	</title>
 			<link rel="stylesheet" href="style.css" href="https://fonts.google.com/?query=arvo&selection.family=Arvo">
 	</head>
 	<body>
-		<fieldset>
-			<legend>Required Information</legend>
-			<form id="imageForm">
-			<input type="file" name="image" /><br>
-	        <textarea name="comments" cols="20" rows="4">Enter your caption here</textarea><br/>
-	        <input type="submit" value="submit" name="submit">
-      	</form>
-      	</fieldset>
-
-<!-- 		<form id="imageForm">
-			<input type="file" name="image" /><br>
-	        <textarea name="comments" cols="20" rows="4">Enter your caption here</textarea><br/>
-	        <input type="submit" value="submit" name="submit">
-      	</form>  This was the previous attempt at the page -->
-
 		<div class="content">
 		<div class="nav">
 			<div class="logo">
@@ -31,11 +16,24 @@
 			<h4 id = "search"> "Search" </h4></id>
 			</div>
 <!-- 			<hr class="bottom2"> -->
-		<div class="bar">	
+		<div class="bar">
 			<h1 id = "date"> "Date" </h1></id>
 		</div>
-		<div class="middle">			
-			<div class = "box">
+		<div id="uploadsection">
+		<fieldset>
+			<legend>Required Information</legend>
+			<input type="text" name="title" placeholder="enter title" id="imagetitle"></br>
+			<textarea id="description" name="comments" placeholder="Enter your caption here"cols="20" rows="4"></textarea><br/>
+			<form id="imageForm">
+						<input type="file" name="image" />
+						<input type="submit">
+			</form>
+	</fieldset>
+</div>
+		<div class="middle">
+			 <div class = "box1"></div>
+
+			<!-- <div class = "box">
 				<img src="x.png" alt="X marks the spot" style="width 60px; height:80px;">Caption</div>
 			<div class = "box">
 				<img src="x.png" alt="X marks the spot" style="width 60px; height:80px;">Caption</div>
@@ -48,9 +46,7 @@
 			<div class = "box">
 				<img src="x.png" alt="X marks the spot" style="width 60px; height:80px;">Caption</div>
 			<div class = "box">
-				<img src="x.png" alt="X marks the spot" style="width 60px; height:80px;">Caption</div>
-			<div class = "box">
-				<img src="x.png" alt="X marks the spot" style="width 60px; height:80px;">Caption</div>
+				<img src="x.png" alt="X marks the spot" style="width 60px; height:80px;">Caption</div> -->
 			</div>
 			</div>
 			</div>
@@ -59,7 +55,7 @@
 			</div>
 			</div>
 			</div>
-		</div>	
+		</div>
 		</div>
 	<div class="bottom">
 		<div class="fa fa-facebook-official"><h4>This space is for social media icons</h4></div>
@@ -73,13 +69,13 @@
 
 
 
-	
+
 
 
 
 		<div class = "footer">
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- these are the social media icon library. -->
-		
+
 <!-- 	<div class="icons">
 			<div class="fa-facebook">
 			<div class="fa-twitter">
@@ -89,8 +85,7 @@
 		</div>
 
 
-	    <script src="app.js"></script>
+	    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	    <script src="app.js"></script>
 	</body>
 </html>
-
