@@ -13,7 +13,8 @@ var viewPhoto = function(){
 viewPhoto();
 $('#imageForm').on('submit', function(e){
  e.preventDefault();
- $.ajax({
+//$('#imageForm').on('submit', function(){
+$.ajax({
   method: "POST",
   url: "/images",
   data: new FormData($(this)[0]),
@@ -38,3 +39,19 @@ var postimage = function(res){
   viewPhoto();
  });
 };
+
+
+
+/*-----------------RICHARD-----------------*/
+
+$("#loginbutton").on("click",function(){
+  $("#popup").show(),$("#loginbutton").hide();
+});
+
+$("#close1").on("click",function(){
+  $("#popup").hide(),$("#loginbutton").show();
+});
+$("#close2").on("click",function(){
+  $("#popup").hide(),$("#loginbutton").show();
+});
+/*-----------------RICHARD-----------------*/
