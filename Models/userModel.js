@@ -1,5 +1,5 @@
 var account = require('./../Config/config.js');
-//var Images = require('./../Models/imageModel.js');
+var Images = require('./../Models/imageModel.js');
 
 var Seq = require('sequelize');
 
@@ -7,14 +7,9 @@ var seq = new Seq('postgres://'+account.usernameDB+':'+account.passwordDB+'@loca
 
 var User = seq.define('users',{
  id:{type:Seq.INTEGER,
-  autoIncrement:true,
-  primaryKey:true,
-  //references:{
-  ////model: Images,
-  //key: 'imageId',
-  //deferrable: Seq.Deferrable.INITIALLY_IMMEDIATE
-//}
-},
+    autoIncrement:true,
+    primaryKey:true
+ },
  email:{type:Seq.STRING, unique:true},
  password:Seq.STRING,
  firstname:Seq.STRING,
@@ -23,3 +18,10 @@ var User = seq.define('users',{
 });
 User.sync();
 module.exports = User;
+
+
+//   references:{
+//   model: Images,
+//   key: 'imageId',
+//   deferrable: Seq.Deferrable.INITIALLY_IMMEDIATE
+// }
