@@ -55,3 +55,18 @@ $("#close2").on("click",function(){
   $("#popup").hide(),$("#loginbutton").show();
 });
 /*-----------------RICHARD-----------------*/
+
+
+// -------------------------
+// document.getElementByx.p('.box')
+// 	.addEventlistener('mouseover',
+// 	function(){
+// 		document.getElementByx.p('box')
+// 		.style.transform="scale(0.5)";
+// 	});
+// ---
+// in jquerry
+$('#x.p').on('mouseover',
+	function(){
+		$('#x.p').css('transform', 'scale(.5)'
+	});
