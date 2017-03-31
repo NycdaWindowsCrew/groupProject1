@@ -56,17 +56,36 @@ $("#close2").on("click",function(){
 });
 /*-----------------RICHARD-----------------*/
 
+// ------conne{cting the back-end with the front-end below (Camille)
 
-// -------------------------
-// document.getElementByx.p('.box')
-// 	.addEventlistener('mouseover',
-// 	function(){
-// 		document.getElementByx.p('box')
-// 		.style.transform="scale(0.5)";
-// 	});
-// ---
-// in jquerry
-$('#x.p').on('mouseover',
-	function(){
-		$('#x.p').css('transform', 'scale(.5)'
-	});
+var getUser = function(){
+
+  $.ajax({
+    method: "GET",
+    url: "/User"
+  }).then(function(res){
+    console.log(res);
+    $('.container').empty();
+    for(var i = 0; i < res.length; i++){
+      var card = `<div class="card">
+        <h1>`+ res[i].email +`</h1>
+        <h3>`+ res[i].password +`</h3>
+        <h3>`+ res[i].firstname +`</h3>
+        <h3>`+ res[i].lastname +`</h3>
+        <h3>`+ res[i].birthdate +`</h3>
+        <button onclick="deleteEmployee(`+ res[i].id +`)">DELETE</button>
+      </div>`;
+      $(".container").append(card);
+    }
+  });
+};
+getUser();
+
+var deleteUser = function(id){
+  $.ajax({
+    method: "DELETE",
+    url: "/User/" + id
+  }).then(function(res){
+    getUser();
+  })
+}
