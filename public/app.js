@@ -1,14 +1,16 @@
-
 $("#loginbutton").on("click",function(){
   $("#popup").show(),$("#loginbutton").hide();
 });
+$("#regbutton").on("click",function(){
+  $("#register").show(),$("#login").hide();
+});
+$("#logbutton").on("click",function(){
+  $("#register").hide(),$("#login").show();
+});
+$("#close").on("click",function(){
+  $("#popup").hide(),$("#loginbutton").show();
+});
 
-$("#close1").on("click",function(){
-  $("#popup").hide(),$("#loginbutton").show();
-});
-$("#close2").on("click",function(){
-  $("#popup").hide(),$("#loginbutton").show();
-});
 
 /*-------------------------------------------------*/
 
@@ -17,7 +19,7 @@ $('#imageForm').on('submit', function(){
   method: "POST",
   url: "/images",
   data: new FormData($(this)[0]),
-  contentType; false,
+  contentType: false,
   processData: false,
   enctype: 'multipart/form-data'
  }).then(function(res){
@@ -36,6 +38,6 @@ function animate(){
 
 function enlarge (){
 	document.getElementById("x.png").addEventListener("hover");
-	zoom: 0.5;
-	-moz-transform: scale(.5);
+// this is css>>>	// zoom: 0.5;
+	// transform: scale(.5);
 };
