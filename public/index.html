@@ -5,41 +5,46 @@
     <title>login page</title>
       <link rel="stylesheet" href="style.css">
   </head>
-<body>
-	<div id="welcomescreen">
-		<img src="https://images.unsplash.com/photo-1470163395405-d2b80e7450ed?dpr=1.25&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=" alt="">
-	</div>
+<body id="index">
 
-	<button type="button" id="loginbutton">willkommen</button>
-		<div id="popup">
+  <div class="indexcontainer">
 
-			<div id="login">
-				<button type="button" id="close1">X</button>
-				<h2>Please Login</h2>
-	      <form class="loginForm">
-	        <input type="email"required placeholder="Email">
-	        <input type="password"required placeholder="password">
-	        <button type="submit" class="login-button">Login</button>
+  	<button type="button" id="loginbutton">WELCOME</button>
+  		<div id="popup">
+        <button type="button" id="close">X</button>
 
-	      </form>
+    			<div id="login">
 
-			</div>
+    				<h2>Please Login</h2>
+    	      <form class="loginForm">
+    	        <input type="email"required placeholder="Email">
+    	        <input type="password"required placeholder="Password">
+    	        <button type="submit" class="login-button">Login</button>
 
-			<div id="register"></div>
-				<button type="button" id="close2">X</button>
-				<h2>Please Register</h2>
-				<form class="registerForm">
-					<input type="text" name="first name" placeholder="First Name">
-					<input type="text" name="last name" placeholder="Last Name">
-					<input type="email"required placeholder="Email">
-					<input type="email"required placeholder=" Confirm Email">
-					<input type="password"required placeholder="Create Password">
-					<input type="password"required placeholder="Confirm Password">
-					<button type="submit" class="Register-button">Register</button>
+              <button type="button" id="regbutton">REGISTER NOW</button>
 
-				</form>
+    	      </form>
 
-		</div>
+    			</div>
+
+    			<div id="register">
+
+    				<h2>Please Register</h2>
+    				<form class="registerForm">
+    					<input type="text" name="firstname" placeholder="First Name">
+    					<input type="text" name="lastname" placeholder="Last Name">
+    					<input type="email"required placeholder="Email">
+    					<input type="email"required placeholder=" Confirm Email">
+    					<input type="password"required placeholder="Create Password">
+    					<input type="password"required placeholder="Confirm Password">
+    					<button type="submit" class="Register-button">Register</button>
+
+              <button type="button" id="logbutton">LOGIN NOW</button>
+
+    				</form>
+          </div>
+  		</div>
+  </div>
 
 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
 			</script>

@@ -147,9 +147,9 @@ fieldset{
 	align-content: left;
 	padding: 0px 20px;
 
-} 
+}
 
-/*boythingy was added to compartmentalize images
+/*boxthingy was added to compartmentalize images
 */
 .box {
 	width: 100px;
@@ -185,6 +185,75 @@ fieldset{
 	width: 100%;
 	height: 100px;
 	background-color: #84714F;
+	padding: 0;
+	color: white;
+}
+
+.material-icons {
+	align-content: center;
+
+	font-size:12px
+}
+/*--------------------------------*/
+.indexcontainer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+#index {
+	background-image: url("welcomephoto.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: inline-flex;
+  margin: auto;
+  width: 100%;
+  height: max-content;
+}
+#loginbutton {
+  background-color: #00ff0a;
+  border: none;
+	position: absolute;
+	left: 40%;
+	top: 30%;
+  color: white;
+	opacity: .6;
+  width: 350px;
+  height: 80px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+	align-content: center;
+  font-size: 52px;
+	border-radius: 5px;
+  transition-duration: 0.8;
+}
+#loginbutton:hover{
+  background-color: #00ff0a;
+  color: #0b8317;
+  opacity: .7;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#popup {
+  align-content: center;
+	position: absolute;
+	left: 25%;
+	top: 30%;
+  height:50vh;
+  width:50vw;
+  background-color: #56ec30;
+	opacity: .9;
+  display:none;
+}
+#login {
+
+}
+.loginForm {
+
+}
+#register {
+display: none;
 }
 
 /*.fa-stack fa-lg{
@@ -222,6 +291,10 @@ fieldset{
 	padding: 100px;
 	border: 20px;
 	background-color: #84714F;
+}
+#close {
+	display: inline-flex;
+	float: right;
 }
 
 #Information {
