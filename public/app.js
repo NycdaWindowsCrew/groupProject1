@@ -4,16 +4,15 @@ var viewPhoto = function(){
   url:"/images"
  }).then(function(res){
   console.log(res);
-  $('.box1').empty();
+  $('.left').empty();
   for(var i=0; i<res.length;i++){
-   $('.box1').append('<div class="box" style="height:max-content"><img src="'+res[i].imageURL+'"style="width 60px; height:80px;"><h1>'+res[i].imageTitle+'</h1><p>'+res[i].imageDesc+'</p></div>');
+   $('.left').append('<div class="box" style="height:max-content;"><img src="'+res[i].imageURL+'"><h1>'+res[i].imageTitle+'</h1><p>'+res[i].imageDesc+'<button onclick="deletePhoto('+res[i].imageId+')"><h5>X</h5></button><button onclick="updatePhoto('+res[i].imageId+')"><h5>E</h5></button></p></div>');
   }
  });
 };
 viewPhoto();
 $('#imageForm').on('submit', function(e){
  e.preventDefault();
-//$('#imageForm').on('submit', function(){
 $.ajax({
   method: "POST",
   url: "/images",
@@ -37,7 +36,32 @@ var postimage = function(res){
   data: data
  }).then(function(res){
   viewPhoto();
+ $('#imagetitle').val('');
+ $('#description').val('');
+ $('#filename').val('');
  });
+};
+var deletePhoto = function(imageId){
+ $.ajax({
+  method: "DELETE",
+  url: "/images/"+imageId
+ }).then(function(res){
+  viewPhoto();
+ });
+};
+var updatePhoto = function(imageId, imageURL, imageTitle, imageDesc){
+  var updatedPhoto = {
+    imageTitle: Title,
+    imageDesc: Desc
+  };
+  console.log(updatedPhoto)
+  $.ajax({
+    method: "PUT",
+    url: '/images/' + imageId,
+    data: updatedPhoto
+  }).then(function(res){
+    viewPhoto();
+  })
 };
 
 

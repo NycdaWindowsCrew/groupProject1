@@ -1,91 +1,56 @@
 <!DOCTYPE html>
-	<html>
-	<head>
-			<title>	</title>
-			<link rel="stylesheet" href="style.css" href="https://fonts.google.com/?query=arvo&selection.family=Arvo">
-	</head>
-	<body>
-		<div class="content">
-		<div class="nav">
-			<div class="logo">
-				<img src="x.png" alt="X marks the spot" style="width 25px; height:25px;">
-			</div>
-			<a href="http://www.GroupPrject.com/Home"><h3>home </h3></a>
-			<a href="http://www.GroupPrject.com/playlists"><h3>play lists</h3></a>
-			<a href="http://www.GroupPrject.com/Hello"><h3> Hello js name</h3></a>
-			<h4 id = "search"> "Search" </h4></id>
-			</div>
-<!-- 			<hr class="bottom2"> -->
-		<div class="bar">
-			<h1 id = "date"> "Date" </h1></id>
-		</div>
-		<div id="uploadsection">
-		<fieldset>
-			<legend>Required Information</legend>
-			<input type="text" name="title" placeholder="enter title" id="imagetitle"></br>
-			<textarea id="description" name="comments" placeholder="Enter your caption here"cols="20" rows="4"></textarea><br/>
-			<form id="imageForm">
-						<input type="file" name="image" />
-						<input type="submit">
-			</form>
-	</fieldset>
+ <html>
+   <head>
+    <title>    </title>
+ <link rel="stylesheet" href="style.css">
+   </head>
+		<body>
+     <div class="content">
+       <div class="nav">
+       <div class="logo">
+   	    <img src="x.png" alt="X marks the spot" style="width 25px; height:25px;">
+       </div>
+       <a href="http://www.GroupProject.com/Home"><h3>home </h3></a>
+       <a href="http://www.GroupProject.com/playlists"><h3>play lists</h3></a>
+       <!-- <a href="http://www.GroupProject.com/Hello"><h3> Hello js name</h3></a> -->
+       </div>
+       <div class="bar">
+          <h1 id="date">"Date"</h1>
+       </div>
+
+  <div class="middle">
+     <!-- <div class = "boxythingy"> -->
+						<div class="left"></div>
+							<fieldset>
+								<legend>Required Information</legend>
+									<input id="imagetitle" type="text" name="title" placeholder="Enter Title" ></br>
+									<textarea id="description" name="comments" placeholder="Enter your caption here" cols="34" rows="6"></textarea><br/>
+								<form id="imageForm">
+									<input type="file" name="image" id="filename">
+									<input type="submit">
+								</form>
+							</fieldset>
+					<!-- </div> -->
+	<!-- <div class="left"> -->
+	<!-- <div class="box">
+					<button type="button"><h5>E</h5></button>
+					<button type="button"><h5>X</h5></button>
+	</div> -->
+	<!-- </div> -->
+
 </div>
-		<div class="middle">
-			 <div class = "box1"></div>
 
-			<!-- <div class = "box">
-				<img src="x.png" alt="X marks the spot" style="width 60px; height:80px;">Caption</div>
-			<div class = "box">
-				<img src="x.png" alt="X marks the spot" style="width 60px; height:80px;">Caption</div>
-			<div class = "box">
-				<img src="x.png" alt="X marks the spot" style="width 60px; height:80px;">Caption</div>
-			<div class = "box">
-				<img src="x.png" alt="X marks the spot" style="width 60px; height:80px;">Caption</div>
-			<div class = "box">
-				<img src="x.png" alt="X marks the spot" style="width 60px; height:80px;">Caption</div>
-			<div class = "box">
-				<img src="x.png" alt="X marks the spot" style="width 60px; height:80px;">Caption</div>
-			<div class = "box">
-				<img src="x.png" alt="X marks the spot" style="width 60px; height:80px;">Caption</div> -->
-			</div>
-			</div>
-			</div>
-			</div>
-			</div>
-			</div>
-			</div>
-			</div>
+<div class="bottom">
+		<div class="login-logout">
+		<a href="http://www.GroupProject.com/index.html"><h1>Logout </h1></a>
 		</div>
-		</div>
-	<div class="bottom">
-		<div class="fa fa-facebook-official"><h4>This space is for social media icons</h4></div>
-				<a href="http://www.GroupPrject.com/login-logout"><h4>Login/Logout </h4></a>
-		<!-- <div class= "collumn1">This is text that should be in the footer</div>
-		<div class= "collumn2">This is text that should be in the footer</div>
-		<div class= "collumn3">This is text that should be in the footer</div> -->
-<!-- <i class="fa fa-facebook-official" aria-hidden="true"></i> -->
-	</div>
+</div>
 
+<div class = "footer">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="app.js"></script>
+<script> document.getElementById("date").innerHTML = Date();</script>
+</div>
 
-
-
-
-
-
-
-		<div class = "footer">
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- these are the social media icon library. -->
-
-<!-- 	<div class="icons">
-			<div class="fa-facebook">
-			<div class="fa-twitter">
-			<div class="fa-google">
-			<div class="fa-youtube">
-		</div>	 -->
-		</div>
-
-
-	    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	    <script src="app.js"></script>
-	</body>
+</body>
 </html>
