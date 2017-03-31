@@ -33,13 +33,14 @@ module.exports={
    }
   });
  }, createdatabase: function(req, res){
-  var img = new Images(req.body);
-  img.save(function(err, result){
-   if (err){
-    console.log(err);
-    res.send(err);
-   }res.send(result);
-  });
+  Images.create(req.body)
+   .then(function(result, err){
+     if(err){
+       res.send(err);
+     } else {
+       res.send(result);
+     }
+   });
  }, update: function(req,res){
   Images.findOne({
    where: {id:req.params.id}
