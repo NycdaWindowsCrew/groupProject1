@@ -36,8 +36,8 @@ app.delete('/users/:id',userCtrl.delete);
 app.get('/images',imageCtrl.read);
 app.post('/images', imageCtrl.create);
 app.post('/imagesDatabase', imageCtrl.createdatabase);
-app.put('/images/:id', imageCtrl.update);
-app.delete('/images/:id', imageCtrl.delete);
+app.put('/images/:imageId', imageCtrl.update);
+app.delete('/images/:imageId', imageCtrl.delete);
 
 
 app.listen(8000, function(){

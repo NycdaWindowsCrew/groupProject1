@@ -43,7 +43,7 @@ module.exports={
    });
  }, update: function(req,res){
   Images.findOne({
-   where: {id:req.params.id}
+   where: {imageId:req.params.imageId}
   }).then(function(img){
    img.update(req.body)
    .then(function(result, err){
@@ -57,7 +57,7 @@ module.exports={
   });
  }, delete: function(req, res){
   Images.destroy({
-   where: {id:req.params.id}
+   where: {imageId:req.params.imageId}
   })
   .then(function(result,err){
    if(err){
