@@ -1,31 +1,30 @@
+/*CAMILLE CSS*/
 textarea{
-    color: #84714F ;
-    border-width: 1px;
-   border-color: #84714F ;
-   background-color: transparent;
-   color: #fff;
-   line-height: 1em;
-   padding: .75em;
-   height: auto;
-   box-shadow: none;
-   z-index: 2;
+	color: #84714F;
+	border-width: 1px;
+    border-color: #84714F;
+    background-color: transparent;
+    color: #fff;
+    line-height: 1em;
+    padding: .75em;
+    height: auto;
+    box-shadow: none;
+    z-index: 2;
 }
 
 input {
-    padding: 10px;
-    font-family: "Roboto Condensed", sans-serif;
-    border: none;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 15px;
-   color: #84714F ;
-   align-content: center;
-   position: static;
+	padding: 10px;
+	font-family: "Roboto Condensed", sans-serif;
+	border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    color: #84714F;
+    align-content: center;
+    position: static;
 }
-
-/*----------------------------------------------------
-*/.content{
+.content{
    margin: auto;
     text-align: center;
       width: 100%;
@@ -50,14 +49,14 @@ h3 {
 }
 
 .nav {
-    width: 100%;
-    height: 100%;
-    margin: none;
-   cursor: pointer;
+	width: 100%;
+	height: 100%;
+	margin: none;
+ cursor: pointer;
 }
 
 .nav a, .logo {
-    border: none;
+   border: none;
    color: white;
    padding: 20px 32px 5px 20px;
    text-align: center;
@@ -94,14 +93,21 @@ h4 {
    margin: 10px 0px;
 }
 
+.bar {
+	width: 100%;
+	height: 100%;
+	background-color: #84714F;
+	position: static;
+    display: inline;
+    margin: 10px 0px;
+}
 .bar h1{
-    height: 100%;
-    text-align: left;
-    align-content: left;
-    font-size: 35px;
-    padding: 0px 0px 10px 20px;
-    color: white;
-    border: none;
+   height: 100%;
+   text-align: left;
+   align-content: left;
+   font-size: 35px;
+   padding: 0px 0px 10px 20px;
+   border: none;
    color: none;
    text-decoration: none;
    align-content: left;
@@ -110,9 +116,6 @@ h4 {
    display: inline;
    margin: 8px 0px 0px 0px;
 }
-
-/*-------------------------------------------------*/
-
 .middle {
     width: 100%;
     max-height: 100%;
@@ -124,24 +127,17 @@ h4 {
     width:50%;
 }
 fieldset{
-    min-width: 200px;
-    max-width: 350px;
-    height: 225px;
-    align-content: center;
-    text-align: center;
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: 25px;
-    color: #84714F ;
-				float: right;
+	min-width: 200px;
+	max-width: 350px;
+	height: 225px;
+	align-content: center;
+	text-align: center;
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 25px;
+	color: #84714F;
+	float: right;
+	padding: 0px 20px 50px 0px;
 }
-/*.boxythingy {
-    width: 100%;
-    height: 100%;
-    float: left;
-    align-content: left;
-    padding: 0px 20px;
-
-}*/
 .box {
     width: 320px;
     height: 100%;
@@ -149,16 +145,14 @@ fieldset{
     padding: 15px 20px 20px 0px;
     text-align: center;
     align-content: left;
-}
-
+	}
 .box img{
-    width: 80px;
-    height: 90px;
+    width: 295px;
+    height: 100px;
     cursor: pointer;
 }
-
 .box h5{
-    border: none;
+   border: none;
    color: white;
    text-align: right;
    text-decoration: none;
@@ -170,27 +164,13 @@ fieldset{
    float: right;
    margin: 0px;
 }
-
-/*--------------------------------*/
 .bottom {
     width: 100%;
     height: 100px;
     background-color: #84714F ;
 }
-
-/*.fa-stack fa-lg{
-    width: 100%;
-    height: 100px;
-    background-color: #84714F ;
-    color: white;
-     align-content: center;
-    position: center;
-    font-size: 25px;
-     color: white;
-}*/
-
 .bottom h1 {
-    border: none;
+   border: none;
    color: white;
    padding: 50px 32px 5px 20px;
    text-decoration: none;
@@ -198,23 +178,73 @@ fieldset{
    cursor: pointer;
    position: static;
    float: right;
-      font-family: "Roboto Condensed", sans-serif;
+   font-family: "Roboto Condensed", sans-serif;
 }
 
-/*------------SecondBox----------*/
-.secondBox {
-    width: 100%;
-    min-height: 450px;
-    max-height: 100%;
-    align-content: center;
-    text-align: center;
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: 25px;
-    padding: 100px;
-    border: 20px;
-    background-color: #84714F ;
+
+
+/*RICHARD CSS*/
+.indexcontainer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#index {
+	background-image: url("welcomephoto.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: inline-flex;
+  margin: auto;
+  width: 100%;
+  height: max-content;
+}
+#loginbutton {
+  background-color: #00ff0a;
+  border: none;
+	position: absolute;
+	left: 40%;
+	top: 30%;
+  color: white;
+	opacity: .6;
+  width: 350px;
+  height: 80px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+	align-content: center;
+  font-size: 52px;
+	border-radius: 5px;
+  transition-duration: 0.8;
+}
+#loginbutton:hover{
+  background-color: #00ff0a;
+  color: #0b8317;
+  opacity: .7;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#popup {
+  align-content: center;
+	position: absolute;
+	left: 25%;
+	top: 30%;
+  height:50vh;
+  width:50vw;
+  background-color: #56ec30;
+	opacity: .9;
+  display:none;
+}
+#login {
+
+}
+.loginForm {
+
+}
+#register {
+display: none;
 }
 
-#Information {
-    background-color: white;
+#close {
+	display: inline-flex;
+	float: right;
 }
